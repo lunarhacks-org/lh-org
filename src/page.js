@@ -7,8 +7,8 @@ const AnotherPage = () => {
       {/* Styled button linking to the home page */}
       <a href="/" className="event-button">LunarHacks</a>
       
-      <h1>Welcome to Another Page</h1>
-      <p>This is the content of the other page.</p>
+      <h1>Spark x Lunar Hacks</h1>
+      <p>best workshop everrrr!!!! please come</p>
     </div>
   );
 };

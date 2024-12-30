@@ -14,50 +14,57 @@ body {
   width: 100%;
   color: white;
   background-color: #412775; /* Dark purple background for the nav */
-  padding: 10px 0;
+  padding: 2vw 5vh;
   text-align: center;
   z-index: 1000; /* Keep navigation on top */
   display: flex; /* Use Flexbox to align items */
   justify-content: space-between; /* Push buttons to opposite sides */
   align-items: center; /* Vertically center the items */
+  height: 8vh; /* Set a fixed height for the navbar */
 }
 
 /* Left-aligned buttons for Section 1 */
 .nav-left {
   display: flex;
   justify-content: flex-start; /* Align buttons to the left */
-  width: 50%; /* Ensure the left-aligned section takes up 50% of the nav */
+  width: 50%; /* Ensures this takes up 50% of the width */
+  padding-left: 5vw; /* Padding for the left side to push buttons inward */
 }
 
 /* Right-aligned buttons for Section 2 and Section 3 */
 .nav-right {
   display: flex;
   justify-content: flex-end; /* Align buttons to the right */
-  width: 50%; /* Ensure the right-aligned section takes up 50% of the nav */
+  width: 50%; /* Ensures this takes up 50% of the width */
+  padding-right: 5vw; /* Padding for the right side to push buttons inward */
 }
 
-/* Styling for buttons */
+/* Button Styling */
 .button {
   margin: 5px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #f7d683; /* White text color */
+  text-decoration: none; /* Remove underline */
+  background-color: transparent; /* No background */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Adjust the font size as needed */
+  transition: transform 0.3s ease; /* Smooth transition for scaling effect */
 }
 
+/* Button Hover Styling */
 .button:hover {
-  background-color: #0056b3;
+  transform: scale(1.1); /* Increase size when hovered */
 }
 
 /* Section styles */
 .section {
-  padding: 100px 20px;
-  margin-top: 50px; /* Prevent overlap with fixed nav */
-  height: 100vh; /* Ensure sections are full-screen for better scrolling */
+  padding: 100px 20px; /* Padding for the section content */
+  margin-top: 10vh; /* Add margin-top equivalent to navbar height (8vh + some spacing) */
+  height: 60vh; /* Ensure sections take up most of the screen but not overlap with navbar */
   background-color: #412775; /* Dark purple background for each section */
+  color: #f7d683; /* Light yellow text */
 }
 
 /* Style for AnotherPage */
@@ -69,26 +76,50 @@ body {
   color: #b91858;
 }
 
-.section{
-  color: #f7d683;
+.section-logo {
+  width: 5vw;
+  height: 10vh;
+  transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+.spec-button {
+  background-color: #f7f2e0;
+  color: #ba1857;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spec-button:hover {
+  background-color: #f7f2e0;
+  color: #cd004f;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .event-button {
-  display: inline-block; /* Makes the link behave like a button */
-  padding: 15px 30px; /* Adds padding to the button */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Makes the font bold */
-  text-align: center; /* Centers the text inside the button */
-  text-decoration: none; /* Removes the underline from the link */
-  background-color: #412775; /* Blue background color */
-  color: #f7d683; /* White text color */
-  border-radius: 8px; /* Rounded corners */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  background-color: #412775;
+  color: #f7d683;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Hover effect for the event button */
 .event-button:hover {
-  background-color: #412775; /* Darker blue when hovered */
-  color: #f7d683; /* Lighter text color on hover */
-  transform: scale(1.05); /* Slightly increase button size on hover */
+  transform: scale(1.1);
+}
+
+.h1 {
+  text-align: center;
 }
