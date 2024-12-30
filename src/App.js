@@ -28,23 +28,26 @@ const App = () => {
           Section 3
         </button>
         <a href="/page" className="button">
-          Another Page
+          Events
         </a>
       </nav>
 
       {/* Sections */}
-      <section ref={section1Ref} className="section" style={{ backgroundColor: "#f4f4f4" }}>
-        <h1>Section 1</h1>
-        <p>This is the content of Section 1.</p>
+      <section ref={section1Ref} className="section">
+        <h1>Welcome to Section 1</h1>
+ 
       </section>
-      <section ref={section2Ref} className="section" style={{ backgroundColor: "#eaeaea" }}>
-        <h1>Section 2</h1>
-        <p>This is the content of Section 2.</p>
+
+      <section ref={section2Ref} className="section">
+        <h1>Welcome to Section 2</h1>
+       
       </section>
-      <section ref={section3Ref} className="section" style={{ backgroundColor: "#dcdcdc" }}>
-        <h1>Section 3</h1>
-        <p>This is the content of Section 3.</p>
+
+      <section ref={section3Ref} className="section">
+        <h1>Welcome to Section 3</h1>
+       
       </section>
+
     </div>
   );
 };

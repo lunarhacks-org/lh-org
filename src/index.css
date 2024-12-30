@@ -1,20 +1,25 @@
+/* Global styles for body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth; /* Ensure smooth scrolling globally */
+  background-color: #412775; /* Dark purple background for the body */
 }
 
+/* Navigation bar */
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #333;
+  color: white;
+  background-color: #412775; /* Dark purple background for the nav */
   padding: 10px 0;
   text-align: center;
   z-index: 1000; /* Keep navigation on top */
 }
 
+/* Styling for buttons */
 .button {
   margin: 5px;
   padding: 10px 20px;
@@ -30,9 +35,43 @@ body {
   background-color: #0056b3;
 }
 
+/* Section styles */
 .section {
   padding: 100px 20px;
   margin-top: 50px; /* Prevent overlap with fixed nav */
-  border-bottom: 1px solid #ddd;
   height: 100vh; /* Ensure sections are full-screen for better scrolling */
+  background-color: #412775; /* Dark purple background for each section */
+}
+
+/* Style for AnotherPage */
+.another-page {
+  text-align: center;
+  padding: 50px;
+  background-color: #f7f2e0; /* Keep a different color for AnotherPage */
+  min-height: 100vh; /* Ensure the page takes up full screen */
+  color: #b91858;
+}
+
+.section{
+  color: #f7d683;
+}
+
+.event-button {
+  display: inline-block; /* Makes the link behave like a button */
+  padding: 15px 30px; /* Adds padding to the button */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Makes the font bold */
+  text-align: center; /* Centers the text inside the button */
+  text-decoration: none; /* Removes the underline from the link */
+  background-color: #412775; /* Blue background color */
+  color: #f7d683; /* White text color */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the event button */
+.event-button:hover {
+  background-color: #412775; /* Darker blue when hovered */
+  color: #f7d683; /* Lighter text color on hover */
+  transform: scale(1.05); /* Slightly increase button size on hover */
 }
