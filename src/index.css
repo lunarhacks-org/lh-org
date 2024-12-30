@@ -17,6 +17,23 @@ body {
   padding: 10px 0;
   text-align: center;
   z-index: 1000; /* Keep navigation on top */
+  display: flex; /* Use Flexbox to align items */
+  justify-content: space-between; /* Push buttons to opposite sides */
+  align-items: center; /* Vertically center the items */
+}
+
+/* Left-aligned buttons for Section 1 */
+.nav-left {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  width: 50%; /* Ensure the left-aligned section takes up 50% of the nav */
+}
+
+/* Right-aligned buttons for Section 2 and Section 3 */
+.nav-right {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  width: 50%; /* Ensure the right-aligned section takes up 50% of the nav */
 }
 
 /* Styling for buttons */

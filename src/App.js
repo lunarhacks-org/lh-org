@@ -18,21 +18,26 @@ const App = () => {
     <div>
       {/* Navigation Buttons */}
       <nav className="nav">
-        <button className="button" onClick={() => scrollToSection(section1Ref)}>
-          Section 1
-        </button>
-        <button className="button" onClick={() => scrollToSection(section2Ref)}>
-          Section 2
-        </button>
-        <button className="button" onClick={() => scrollToSection(section3Ref)}>
-          Section 3
-        </button>
-        <a href="/page" className="button">
-          Events
-        </a>
+        <div className="nav-left">
+          <button className="button" onClick={() => scrollToSection(section1Ref)}>
+            Section 1
+          </button>
+        </div>
+        <div className="nav-right">
+          <button className="button" onClick={() => scrollToSection(section2Ref)}>
+            Section 2
+          </button>
+          <button className="button" onClick={() => scrollToSection(section3Ref)}>
+            Section 3
+
+          </button>
+          <a href="/page" className="button">
+            Events
+          </a>
+        </div>
       </nav>
 
-      {/* Sections */}
+      {/* Sections Information here*/}
       <section ref={section1Ref} className="section">
         <h1>Welcome to Section 1</h1>
  
@@ -45,7 +50,7 @@ const App = () => {
 
       <section ref={section3Ref} className="section">
         <h1>Welcome to Section 3</h1>
-       
+        Contact Us
       </section>
 
     </div>
