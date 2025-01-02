@@ -1,6 +1,15 @@
+/* add fonts */
+
+@font-face {
+  font-family: 'Body';
+  src: url('Urbanist/Urbanist-VariableFont_wght.ttf') format('truetype');
+  font-weight: semi-bold; /* For bold text */
+  font-style: normal;
+}
+
 /* Global styles for body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Body', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth; /* Ensure smooth scrolling globally */
