@@ -81,13 +81,13 @@ body {
   text-align: center;
   padding: 50px;
   background-color: #f7f2e0; /* Keep a different color for AnotherPage */
-  min-height: 100vh; /* Ensure the page takes up full screen */
+  min-height: 92vh; /* Ensure the page takes up full screen */
   color: #b91858;
 }
 
 .section-logo {
-  width: 5vw;
-  height: 10vh;
+  width: 70px;
+  height: 70px;
   transform: scale(1.1); /* Slightly enlarge logo on hover */
 }
 
@@ -131,4 +131,30 @@ body {
 
 .h1 {
   text-align: center;
+}
+
+/* container for the about-us images*/
+.img-container {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.img {
+  width: 50vw; /* Size based on viewport width */
+  height: 50vw; /* Keep width and height equal to maintain circular shape */
+  max-width: 100px; /* Optional: Set a maximum size */
+  max-height: 100px; /* Optional: Set a maximum size */
+  min-width: 50px; /* Optional: Set a minimum size for smaller screens */
+  min-height: 50px; /* Optional: Set a minimum size for smaller screens */
+  border-radius: 50%; /* Ensures the image stays circular */
+  object-fit: cover; /* Ensures the image scales correctly inside the circle */
+  border: 2px solid #ccc; /* Optional: Adds a border around the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+  margin: 0 1rem;
+}
+
+.img:hover {
+  content: attr(data-silly);
 }
