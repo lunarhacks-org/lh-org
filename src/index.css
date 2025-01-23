@@ -11,10 +11,12 @@
 body {
   font-family: 'Body', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 8vh;
   scroll-behavior: smooth; /* Ensure smooth scrolling globally */
   background-color: #412775; /* Dark purple background for the body */
 }
+/* styling issue! find a way to not scroll above the nav bar */
+
 
 /* Navigation bar */
 .nav {
@@ -36,15 +38,15 @@ body {
 .nav-left {
   display: flex;
   justify-content: flex-start; /* Align buttons to the left */
-  width: 50%; /* Ensures this takes up 50% of the width */
-  padding-left: 5vw; /* Padding for the left side to push buttons inward */
+  width: 7%; /* Ensures this takes up 50% of the width */
+  padding-left: 3vw; /* Padding for the left side to push buttons inward */
 }
 
 /* Right-aligned buttons for Section 2 and Section 3 */
 .nav-right {
   display: flex;
   justify-content: flex-end; /* Align buttons to the right */
-  width: 50%; /* Ensures this takes up 50% of the width */
+  width: 93%; /* Ensures this takes up 50% of the width */
   padding-right: 5vw; /* Padding for the right side to push buttons inward */
 }
 
@@ -58,6 +60,7 @@ body {
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor */
+  font-family: 'Body', sans-serif;
   font-size: 16px; /* Adjust the font size as needed */
   transition: transform 0.3s ease; /* Smooth transition for scaling effect */
 }
@@ -70,7 +73,7 @@ body {
 /* Section styles */
 .section {
   padding: 100px 20px; /* Padding for the section content */
-  margin-top: 10vh; /* Add margin-top equivalent to navbar height (8vh + some spacing) */
+  margin-top: 9vh; /* Add margin-top equivalent to navbar height (8vh + some spacing) */
   height: 60vh; /* Ensure sections take up most of the screen but not overlap with navbar */
   background-color: #412775; /* Dark purple background for each section */
   color: #f7d683; /* Light yellow text */
@@ -92,23 +95,23 @@ body {
 }
 
 .spec-button {
+  text-align: center;
   background-color: #f7f2e0;
   color: #ba1857;
   margin: 5px;
   padding: 10px 20px;
   text-decoration: none;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .spec-button:hover {
+  text-align: center;
   background-color: #f7f2e0;
   color: #cd004f;
   margin: 5px;
   padding: 10px 20px;
   text-decoration: none;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   transform: scale(1.1);

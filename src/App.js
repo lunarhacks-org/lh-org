@@ -70,7 +70,7 @@ const App = () => {
               Our Team
             </button>
             <button className="button" onClick={() => scrollToSection(section5Ref)}>
-              Contact Us!
+              Contact Us
             </button>
 
             <a href="/page" className="spec-button">
