@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
-import "../index.css";
+import "./Home.css";
 
 const Home = () => {
   const sectionRefs = {

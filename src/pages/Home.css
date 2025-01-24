@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Titles';
+    src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: bold; /* For bold text */
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'subtitles';
+    src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: mixed; /* normal */
+    font-style: thin;
+}
+
+/* ADD REST OF CSS FROM INDEX*/

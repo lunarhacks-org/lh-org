@@ -1,9 +1,9 @@
 import React from "react";
-import "../index.css";
+import "./Events.css";
 
 const Events = () => {
   return (
-    <div className="another-page">
+    <div className="events">
       <a href="/" className="event-button">
         LunarHacks
       </a>

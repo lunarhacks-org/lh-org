@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.png";
-import "../index.css";
+import logo from "../img/logo.png";
+import "./Navbar.css";
 
 const Navbar = ({ sectionRefs }) => {
   const scrollToSection = (section) => {
@@ -13,12 +13,10 @@ const Navbar = ({ sectionRefs }) => {
   return (
     <nav className="nav">
       <div className="nav-left">
-        <img
-          src={logo}
-          alt="Logo"
-          className="section-logo"
-          onClick={() => scrollToSection("lunarhacks")}
-        />
+        {/* Wrap the logo in a button to make it clickable */}
+        <button className="logo-button" onClick={() => scrollToSection("lunarhacks")}>
+          <img src={logo} alt="Logo" className="section-logo" />
+        </button>
       </div>
       <div className="nav-right">
         <button className="button" onClick={() => scrollToSection("about")}>
