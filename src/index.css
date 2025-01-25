@@ -26,6 +26,7 @@ body {
 
 /* Navigation bar */
 .nav {
+  font-family: 'Titles', sans-serif;
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,6 +65,7 @@ body {
   color: #f7d683; /* White text color */
   text-decoration: none; /* Remove underline */
   background-color: transparent; /* No background */
+  font-family: 'Titles', sans-serif;
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor */
@@ -79,6 +81,7 @@ body {
 
 /* Section styles */
 .section {
+  font-family: 'Titles', sans-serif;
   padding: 100px 20px; /* Padding for the section content */
   margin-top: 9vh; /* Add margin-top equivalent to navbar height (8vh + some spacing) */
   height: 91vh; /* Ensure sections take up most of the screen but not overlap with navbar */
@@ -111,6 +114,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .spec-button:hover {

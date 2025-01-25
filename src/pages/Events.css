@@ -13,3 +13,63 @@
 }
 
 /* ADD REST OF CSS FROM INDEX*/
+
+.events {
+  font-family: "subtitles";
+  text-align: center;
+  padding: 50px;
+  background-color: #f7f2e0; /* Keep a different color for AnotherPage */
+  min-height: 92vh; /* Ensure the page takes up full screen */
+  color: #b91858;
+}
+
+.event-button {
+  background-color: #412775;
+  color: #f7d683;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.event-button:hover {
+  transform: scale(1.1);
+}
+
+/* styling for headings*/
+.h1 {
+  font-family: "Titles";
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-top: 5vh;
+}
+
+.lum-logo {
+  width: 30vw;
+
+}
+
+.lum-text {
+  width: 30vw;
+  top: -20vh;
+}
+
+.events .navbar {
+  background-color: #f7f2e0; /* Inverted to match events background */
+  color: #b91858; /* Inverted text color */
+}
+
+.events .navbar-links li a {
+  color: #b91858;
+}
+
+.events .navbar-links li a:hover {
+  color: #412775;
+}
