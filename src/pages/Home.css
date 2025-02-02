@@ -12,4 +12,9 @@
     font-style: thin;
 }
 
-/* ADD REST OF CSS FROM INDEX*/
+.section {
+  font-family: 'Titles', sans-serif;
+  background-color: #412775; /* Dark purple background for each section */
+  color: #f7d683; /* Light yellow text */
+  max-height: 50vh;
+}

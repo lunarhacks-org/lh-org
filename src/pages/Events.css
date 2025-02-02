@@ -12,12 +12,9 @@
     font-style: thin;
 }
 
-/* ADD REST OF CSS FROM INDEX*/
-
 .events {
   font-family: "subtitles";
   text-align: center;
-  padding: 50px;
   background-color: #f7f2e0; /* Keep a different color for AnotherPage */
   min-height: 92vh; /* Ensure the page takes up full screen */
   color: #b91858;

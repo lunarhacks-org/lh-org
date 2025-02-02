@@ -1,19 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import logo from "../img/logo.png";
 import "./Navbar.css";
 
 const Navbar = ({ sectionRefs }) => {
+  const location = useLocation();
+
+  // Function to scroll to section
   const scrollToSection = (section) => {
-    if (sectionRefs[section]?.current) {
-      sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/events") {
+      window.location.replace(`/#${section}`);
+    } else {
+      if (sectionRefs[section]?.current) {
+        sectionRefs[section].current.scrollIntoView({ behavior: "smooth" });
+      }
+      window.location.hash = section;
     }
   };
 
+  // Add a dynamic class based on the current route
+  const navClass = location.pathname === "/events" ? "nav-events" : "nav-home";
+
   return (
-    <nav className="nav">
+    <nav className={`nav ${navClass}`}>
       <div className="nav-left">
-        {/* Wrap the logo in a button to make it clickable */}
         <button className="logo-button" onClick={() => scrollToSection("lunarhacks")}>
           <img src={logo} alt="Logo" className="section-logo" />
         </button>

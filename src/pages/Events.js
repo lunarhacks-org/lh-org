@@ -1,18 +1,28 @@
-import React from "react";
-import "./Events.css";
-import lumText from "../img/lumText.png";
-import lumLogo from "../img/lumLogo.png";
+import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
+import "./Events.css";
 
 const Events = () => {
+  const sectionRefs = {
+    lunarhacks: useRef(null),
+    about: useRef(null),
+    pastEvents: useRef(null),
+    ourTeam: useRef(null),
+    contact: useRef(null),
+  };
+
+  // Handle URL hash on load
+  useEffect(() => {
+    const hash = window.location.hash.slice(1); // Get the section from URL hash
+    if (hash && sectionRefs[hash]?.current) {
+      sectionRefs[hash].current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div className="events">
-      <Navbar />
-      {/* FIX NAV BAR STUFF! */}
-      <div className="header-container">
-        <img src={lumLogo} alt="Lum Logo" className="lum-logo" />
-        <img src={lumText} alt="Lum Text" className="lum-text" />
-      </div>
+      <Navbar sectionRefs={sectionRefs} />
+      
     </div>
   );
 };
