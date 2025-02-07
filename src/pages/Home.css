@@ -18,3 +18,7 @@
   color: #f7d683; /* Light yellow text */
   max-height: 50vh;
 }
+
+html {
+  scroll-behavior: smooth;
+}

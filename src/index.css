@@ -173,3 +173,7 @@ body {
 .img:hover {
   content: attr(data-silly);
 }
+
+html {
+  scroll-behavior: smooth;
+}

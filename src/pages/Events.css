@@ -70,3 +70,7 @@
 .events .navbar-links li a:hover {
   color: #412775;
 }
+
+html {
+  scroll-behavior: smooth;
+} 
