@@ -12,11 +12,21 @@
     font-style: thin;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 10vh; /* Adjust based on navbar height */
+}
+
 .events {
   font-family: "subtitles";
   text-align: center;
   background-color: #f7f2e0; /* Keep a different color for AnotherPage */
-  min-height: 92vh; /* Ensure the page takes up full screen */
+  max-height: 92vh; /* Ensure the page takes up full screen */
   color: #b91858;
 }
 
@@ -40,22 +50,6 @@
 .h1 {
   font-family: "Titles";
   text-align: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center; /* Align items vertically */
-  margin-top: 5vh;
-}
-
-.lum-logo {
-  width: 30vw;
-
-}
-
-.lum-text {
-  width: 30vw;
-  top: -20vh;
 }
 
 .events .navbar {

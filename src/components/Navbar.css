@@ -8,25 +8,26 @@
 @font-face {
   font-family: 'subtitles';
   src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-  font-weight: mixed;
+  font-weight: 300;
   font-style: thin;
 }
 
 .nav {
-  display: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  position: relative;
+  height: 9vh;
 }
 
 .nav-right .button {
+  font-family: 'subtitles';
   margin: 0 10px;
   padding: 10px 15px;
-  color: #f7d683;
+  color: #F7F2E0;
   text-decoration: none;
   background-color: transparent;
   border: none;

@@ -34,7 +34,7 @@ const Events = () => {
   return (
     <div className="events">
       <Navbar sectionRefs={sectionRefs} />
-      
+      <h1>lunarhacks x syrc</h1>
     </div>
   );
 };

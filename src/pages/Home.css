@@ -8,17 +8,28 @@
   @font-face {
     font-family: 'subtitles';
     src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-    font-weight: mixed; /* normal */
-    font-style: thin;
+    font-weight: 300; /* normal */
+    font-style: normal;
+}
+
+.section:first-of-type {
+  margin-top: 0; /* Remove any unwanted spacing */
+  padding-top: 11vh; /* Match the navbar height */
+}
+
+
+.home {
+  font-family: "subtitles";
+  text-align: center;
+  background-color: #f7f2e0; /* Keep a different color for AnotherPage */
+  max-height: 92vh; /* Ensure the page takes up full screen */
+  color: #b91858;
 }
 
 .section {
-  font-family: 'Titles', sans-serif;
+  padding-top: 10vh;
+  font-family: 'Titles';
   background-color: #412775; /* Dark purple background for each section */
   color: #f7d683; /* Light yellow text */
-  max-height: 50vh;
-}
-
-html {
-  scroll-behavior: smooth;
+  height: 30vh;
 }
