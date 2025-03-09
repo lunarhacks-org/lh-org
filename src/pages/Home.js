@@ -1,6 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import "./Home.css";
+import LHLogo from "../img/lh.png"; // Import the "lh" image
+import aboutTxt from "../img/aboutUs.png";
+import industry from "../img/industry.png";
+import parts from "../img/participants.png";
+import hacks from "../img/threeHackathons.png";
 
 const Home = () => {
   const sectionRefs = {
@@ -23,13 +28,40 @@ const Home = () => {
     <div>
       <Navbar sectionRefs={sectionRefs} />
       <section id="lunarhacks" ref={sectionRefs.lunarhacks} className="section">
-        <h1>LunarHacks</h1>
+        <img 
+          src={LHLogo} 
+          alt="LunarHacks Logo"
+          className="lh-logo"
+        />
       </section>
       <section id="about" ref={sectionRefs.about} className="section">
-        <h1>About Us</h1>
+      <img 
+          src={aboutTxt} 
+          alt="About Us"
+          className="ab-txt"
+        />
+        <h2>we are v cool people</h2>
       </section>
       <section id="pastEvents" ref={sectionRefs.pastEvents} className="section">
         <h1>Past Events</h1>
+          <img
+          src={hacks}
+          alt="three hackathons"
+          className="hacks-img"
+          />
+        
+        <img
+        src={parts}
+        alt="600+ participants"
+        className="parts-img"
+        />
+
+        <img
+          src={industry}
+          alt="40+ industry profs"
+          className="ind-img"
+        />
+      
       </section>
       <section id="ourTeam" ref={sectionRefs.ourTeam} className="section">
         <h1>Our Team</h1>

@@ -1,35 +1,72 @@
 @font-face {
-    font-family: 'Titles';
-    src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-    font-weight: bold; /* For bold text */
-    font-style: normal;
+  font-family: 'Titles';
+  src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
-  
-  @font-face {
-    font-family: 'subtitles';
-    src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-    font-weight: 300; /* normal */
-    font-style: normal;
+
+@font-face {
+  font-family: 'subtitles';
+  src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 300;
+  font-style: thin;
 }
+
 
 .section:first-of-type {
   margin-top: 0; /* Remove any unwanted spacing */
   padding-top: 11vh; /* Match the navbar height */
 }
 
-
-.home {
-  font-family: "subtitles";
-  text-align: center;
-  background-color: #f7f2e0; /* Keep a different color for AnotherPage */
-  max-height: 92vh; /* Ensure the page takes up full screen */
-  color: #b91858;
-}
-
 .section {
-  padding-top: 10vh;
-  font-family: 'Titles';
   background-color: #412775; /* Dark purple background for each section */
-  color: #f7d683; /* Light yellow text */
-  height: 30vh;
+  height: 60vh;
 }
+
+h1 {
+  font-family: 'Titles';
+  color: #EAAC49;
+  padding-left: 9vw;
+  font-size: 45px;
+}
+
+h2 {
+  color: #F7D683;
+  font-family: 'subtitles';
+}
+
+.lh-logo {
+  display: block;
+  padding-top: 20vh;
+  margin: 0 auto;  /* Centers the image */
+  max-width: 40vw; /* Adjust size as needed */
+  height: auto;
+}
+
+.ab-txt {
+  padding-top: 2vh;
+  max-width: 22vw;
+  height: auto;
+  padding-left: 9vw;
+}
+
+.hacks-img{
+  display: block;
+  max-width: 40vw;
+  margin: 0 auto;
+}
+
+.ind-img {
+  max-width: 35vw;
+  float: right;
+  padding-right: 5vw;
+}
+
+
+.parts-img{
+  max-width: 27vw;
+  padding-left: 5vw;
+}
+
+
+
