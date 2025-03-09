@@ -22,6 +22,16 @@ body {
   padding-top: 10vh; /* Adjust based on navbar height */
 }
 
+.sol {
+  text-align: center;
+  padding: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #f7f2e0; /* Keep a different color for AnotherPage */
+  min-height: 92vh; /* Ensure the page takes up full screen */
+  color: #b91858;
+}
+
 .events {
   font-family: "subtitles";
   text-align: center;
@@ -68,3 +78,40 @@ body {
 html {
   scroll-behavior: smooth;
 } 
+
+.reg-button {
+  background-color: #BA1757;
+  color: #F7F2E0;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reg-button:hover {
+  background-color: #d23876;
+  color: #F7F2E0;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.solheader {
+  text-align: left;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #EC70A1;
+  margin-bottom: 16px;
+}
+
+.soltext {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 12px;
+}
