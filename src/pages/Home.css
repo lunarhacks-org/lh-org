@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Titles';
   src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'subtitles';
   src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: 100 300;
   font-style: thin;
 }
 
@@ -33,7 +33,25 @@ h1 {
 h2 {
   color: #F7D683;
   font-family: 'subtitles';
+  font-weight: 400;
 }
+
+h3 {
+  font-family: 'Titles';
+  color: #EAAC49;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'subtitles';
+  color: #F7D683;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 400;
+}
+
 
 .lh-logo {
   display: block;
@@ -52,21 +70,31 @@ h2 {
 
 .hacks-img{
   display: block;
-  max-width: 40vw;
+  max-width: 30vw;
   margin: 0 auto;
 }
 
 .ind-img {
-  max-width: 35vw;
+  max-width: 25vw;
   float: right;
   padding-right: 5vw;
 }
 
 
 .parts-img{
-  max-width: 27vw;
+  max-width: 17vw;
   padding-left: 5vw;
 }
 
+.lh-past {
+  border-radius: 15px;
+  max-width: 27vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
 
-
+.past{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}

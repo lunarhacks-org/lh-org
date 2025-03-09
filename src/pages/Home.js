@@ -6,6 +6,8 @@ import aboutTxt from "../img/aboutUs.png";
 import industry from "../img/industry.png";
 import parts from "../img/participants.png";
 import hacks from "../img/threeHackathons.png";
+import lh3 from "../img/lh3.jpg";
+import lhOrg from "../img/lhOrg.jpg";
 
 const Home = () => {
   const sectionRefs = {
@@ -61,7 +63,26 @@ const Home = () => {
           alt="40+ industry profs"
           className="ind-img"
         />
-      
+      <h3>
+        Interested in <span style={{ textDecoration: 'underline' }}>sponsoring</span> or <span style={{ textDecoration: 'underline' }}>starting a chapter</span>?
+      </h3>
+      <h4>
+        Reach out at insert <a href="mailto:hello@lunarhacks.com" style={{ color:"#F7D683", fontWeight:"normal" }}> hello@lunarhacks.com</a> !
+      </h4>
+
+    
+
+    <div className="past">
+      <img
+      src={lh3}
+      className="lh-past"
+      />
+      <img
+      src={lhOrg}
+      className="lh-past"
+      />
+
+    </div >
       </section>
       <section id="ourTeam" ref={sectionRefs.ourTeam} className="section">
         <h1>Our Team</h1>
