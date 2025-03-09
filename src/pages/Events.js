@@ -39,7 +39,8 @@ const Events = () => {
       className="sol"
     >
       {/* Styled button linking to the home page */}
-      <a href="/" className="event-button">LunarHacks</a>
+      <a href="/" className="event-button" >LunarHacks</a>
+      
       <div 
         style={{ display:"flex" }}
       >
@@ -60,8 +61,10 @@ const Events = () => {
               April 26th @ Carleton University
             </p>
             <a 
-              href="link here" className="reg-button"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbndoP_zVvj2RsKam4-mmZ6n_YTY5-LmsqQERjhe_FAnFYfg/viewform?usp=sharing" className="reg-button"
               style={{ fontSize:"28px", fontWeight:"bold", paddingLeft:"10%", paddingRight:"10%" }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               REGISTER NOW!
             </a>
@@ -90,18 +93,22 @@ const Events = () => {
       >
         <p className="solheader">WHO CAN PARTICIPATE?</p>
         <p className="soltext" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat.
+          Any children ages __ to ___!
         </p>
       </div>
       <div
         style={{ marginTop:"60px" }}
       >
         <p className="solheader">I HAVE MORE QUESTIONS!</p>
-        <p className="soltext" >
-          Email us at <a href="hello@lunarhacks.com" style={{ color:"#BA1757", fontWeight:"bold" }}>hello@lunarhacks.com</a> or <a href="spark.youthrc@gmail.com" style={{ color:"#BA1757", fontWeight:"bold" }}>spark.youthrc@gmail.com</a>; we'd be happy to chat!
-        </p>
+        <p className="soltext">
+  Email us at 
+  <a href="mailto:hello@lunarhacks.com" style={{ color:"#BA1757", fontWeight:"bold" }}> hello@lunarhacks.com</a> 
+  <span style={{ margin: "0 4px" }}>or</span> 
+  <a href="mailto:spark.youthrc@gmail.com" style={{ color:"#BA1757", fontWeight:"bold" }}> spark.youthrc@gmail.com</a>; 
+  we'd be happy to chat!
+</p>
+
+
       </div>
     </div>
   );
