@@ -8,6 +8,11 @@ import parts from "../img/participants.png";
 import hacks from "../img/threeHackathons.png";
 import lh3 from "../img/lh3.jpg";
 import lhOrg from "../img/lhOrg.jpg";
+import grace from "../img/grace.jpg";
+import aroob from "../img/aroob.png";
+import tishya from "../img/tishya.jpg"
+import vivian from "../img/vivan.jpeg";
+import sophie from "../img/sophie.jpeg";
 
 const Home = () => {
   const sectionRefs = {
@@ -86,6 +91,95 @@ const Home = () => {
       </section>
       <section id="ourTeam" ref={sectionRefs.ourTeam} className="section">
         <h1>Our Team</h1>
+
+        <div className="team">
+            <div className="profile">
+            <img
+            src={grace}
+            className="person"
+            />
+            <h3>grace</h3>
+          </div>
+          
+          <div className="profile">
+            <img
+            src={aroob}
+            className="person"
+            />
+            <h3>aroob</h3>
+            </div>
+
+            <div className="profile">
+            <img
+            src={tishya}
+            className="person"
+            />
+            <h3>tishya</h3>
+            </div>
+
+            <div className="profile">
+            <img
+            src={vivian}
+            className="person"
+            />
+            <h3>vivian</h3>
+            </div>
+
+            <div className="profile">
+            <img
+            src={sophie}
+            className="person"
+            />
+            <h3>sophie</h3>
+            </div>
+
+        </div>
+        <div className="team">
+            <div className="profile">
+            <img
+            src={grace}
+            className="person"
+            />
+            <h3>linda</h3>
+          </div>
+          
+          <div className="profile">
+            <img
+            src={aroob}
+            className="person"
+            />
+            <h3>anerie</h3>
+            </div>
+
+            <div className="profile">
+            <img
+            src={tishya}
+            className="person"
+            />
+            <h3>ariel</h3>
+            </div>
+
+            <div className="profile">
+            <img
+            src={vivian}
+            className="person"
+            />
+            <h3>eileen</h3>
+            </div>
+
+            <div className="profile">
+            <img
+            src={sophie}
+            className="person"
+            />
+            <h3>emily</h3>
+            </div>
+
+        </div>
+
+
+{/* add spacing between names -> perhaps try columns within a flex*/}
+
       </section>
       <section id="contact" ref={sectionRefs.contact} className="section">
         <h1>Contact Us!</h1>

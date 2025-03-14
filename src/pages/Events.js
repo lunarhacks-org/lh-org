@@ -5,6 +5,9 @@ import SoLLogo from "../img/sollogo.svg";
 import SoLText from "../img/soltext.svg";
 import Sparkle from "../img/sparkle.svg";
 
+
+// should auto go to the start of the page
+
 const Events = () => {
   const sectionRefs = {
     lunarhacks: useRef(null),
@@ -84,9 +87,12 @@ const Events = () => {
             school students to coding, robotics, and some basic STEM concepts!
           </p>
         </div>
-        {/* <div className={{ width: "0%" }}>
-          <img src={Sparkle} alt="sparkle" style={{ width:"100%" }} />
-        </div> */}
+        <img
+        src={Sparkle}
+        alt="sparkle"
+        className="sparkle"
+        />
+
       </div>
       <div
         style={{ marginTop:"18px" }}

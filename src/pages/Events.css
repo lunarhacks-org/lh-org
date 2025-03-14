@@ -53,6 +53,7 @@ body {
 }
 
 .event-button:hover {
+  background-color: purple;
   transform: scale(1.1);
 }
 
@@ -115,4 +116,9 @@ html {
   font-size: 20px;
   margin-top: 12px;
   font-weight:normal;
+}
+
+.sparkle {
+  max-width: 10vw;
+  padding-left: 5vw;
 }

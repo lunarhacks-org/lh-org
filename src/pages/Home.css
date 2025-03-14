@@ -27,7 +27,7 @@ h1 {
   font-family: 'Titles';
   color: #EAAC49;
   padding-left: 9vw;
-  font-size: 45px;
+  font-size: 4vw;
 }
 
 h2 {
@@ -87,7 +87,6 @@ h4 {
 }
 
 .lh-past {
-  border-radius: 15px;
   max-width: 27vw;
   padding-right: 2vw;
   padding-left: 2vw;
@@ -97,4 +96,27 @@ h4 {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.person {
+  max-width: 8vw;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  border-radius: 100px;
+}
+
+.person:hover{
+  transform: scale(1.1);
+  opacity: 80%;
+}
+
+.profile {
+  display:"column";
+  align-items: center;
 }
