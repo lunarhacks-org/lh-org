@@ -72,7 +72,7 @@ const Home = () => {
         Interested in <span style={{ textDecoration: 'underline' }}>sponsoring</span> or <span style={{ textDecoration: 'underline' }}>starting a chapter</span>?
       </h3>
       <h4>
-        Reach out at insert <a href="mailto:hello@lunarhacks.com" style={{ color:"#F7D683", fontWeight:"normal" }}> hello@lunarhacks.com</a> !
+        Reach out at <a href="mailto:hello@lunarhacks.com" style={{ color:"#F7D683", fontWeight:"normal" }}> hello@lunarhacks.com</a> !
       </h4>
 
     
@@ -182,7 +182,12 @@ const Home = () => {
 
       </section>
       <section id="contact" ref={sectionRefs.contact} className="section">
-        <h1>Contact Us!</h1>
+
+      <h5>Contact Us!</h5>
+
+      <h4 style={{ fontSize: "20px" , alignItems:"center"}}>
+        We'd love to answer any inquires you have. </h4>
+
       </section>
     </div>
   );

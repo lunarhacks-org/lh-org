@@ -53,12 +53,21 @@ h4 {
 }
 
 
+h5 {
+  font-family: 'Titles';
+  color: #EAAC49;
+  padding-left: 9vw;
+  font-size: 4vw;
+  text-align: center;
+}
+
 .lh-logo {
   display: block;
   padding-top: 20vh;
   margin: 0 auto;  /* Centers the image */
   max-width: 40vw; /* Adjust size as needed */
   height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 .lh-logo:hover{
@@ -78,10 +87,20 @@ h4 {
   margin: 0 auto;
 }
 
+.hacks-img:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
 .ind-img {
   max-width: 25vw;
   float: right;
   padding-right: 5vw;
+}
+
+.ind-img:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 
@@ -90,11 +109,18 @@ h4 {
   padding-left: 5vw;
 }
 
+
+.parts-img:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
 .lh-past {
   max-width: 27vw;
   padding-right: 2vw;
   padding-left: 2vw;
 }
+
 
 .past{
   display: flex;
@@ -118,6 +144,7 @@ h4 {
 .person:hover{
   transform: scale(1.1);
   opacity: 80%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .profile {

@@ -49,12 +49,11 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  
 }
 
 .event-button:hover {
   background-color: purple;
-  transform: scale(1.1);
 }
 
 /* styling for headings*/

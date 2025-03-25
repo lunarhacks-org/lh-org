@@ -99,7 +99,8 @@ const Events = () => {
       >
         <p className="solheader">WHO CAN PARTICIPATE?</p>
         <p className="soltext" >
-          Any children ages __ to ___!
+          Any children ages 7 to 13!
+          Older than 16? Apply to become a speaker and lead a workshop
         </p>
       </div>
       <div
