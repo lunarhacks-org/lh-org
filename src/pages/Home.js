@@ -13,6 +13,8 @@ import aroob from "../img/aroob.png";
 import tishya from "../img/tishya.jpg"
 import vivian from "../img/vivan.jpeg";
 import sophie from "../img/sophie.jpeg";
+import anerie from "../img/anerie.jpg";
+import eileen from "../img/eileen.jpg";
 
 const Home = () => {
   const sectionRefs = {
@@ -34,14 +36,14 @@ const Home = () => {
   return (
     <div>
       <Navbar sectionRefs={sectionRefs} />
-      <section id="lunarhacks" ref={sectionRefs.lunarhacks} className="section">
+      <section id="lunarhacks" ref={sectionRefs.lunarhacks} className="section main-section">
         <img 
           src={LHLogo} 
           alt="LunarHacks Logo"
           className="lh-logo"
         />
       </section>
-      <section id="about" ref={sectionRefs.about} className="section">
+      <section id="about" ref={sectionRefs.about} className="section aboutUs-section">
       <img 
           src={aboutTxt} 
           alt="About Us"
@@ -54,7 +56,7 @@ generation of STEM leaders while breaking barriers that
 exist in today's society. The galaxy’s the limit.
 </h2>
       </section>
-      <section id="pastEvents" ref={sectionRefs.pastEvents} className="section">
+      <section id="pastEvents" ref={sectionRefs.pastEvents} className="section pastEvents-section">
         <h1>Past Events</h1>
           <img
           src={hacks}
@@ -94,7 +96,7 @@ exist in today's society. The galaxy’s the limit.
 
     </div >
       </section>
-      <section id="ourTeam" ref={sectionRefs.ourTeam} className="section">
+      <section id="ourTeam" ref={sectionRefs.ourTeam} className="section ourTeam-section">
         <h1>Our Team</h1>
 
         <div className="team">
@@ -145,7 +147,7 @@ exist in today's society. The galaxy’s the limit.
           
           <div className="profile">
             <img
-            src={aroob}
+            src={anerie}
             className="person"
             />
             <h3>anerie</h3>
@@ -161,7 +163,7 @@ exist in today's society. The galaxy’s the limit.
 
             <div className="profile">
             <img
-            src={vivian}
+            src={eileen}
             className="person"
             />
             <h3>eileen</h3>
@@ -178,25 +180,25 @@ exist in today's society. The galaxy’s the limit.
         </div>
 
 
-{/* add spacing between names -> perhaps try columns within a flex*/}
-
       </section>
-      <section id="contact" ref={sectionRefs.contact} className="section">
+      <section id="contact" ref={sectionRefs.contact} className="section contactUs-section">
 
       <h5>Contact Us!</h5>
 
-      <h4 style={{ fontSize: "20px" }}>
-        We'd love to answer any inquires you have. </h4>
+            <h4 style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }}>
+        We'd love to answer any inquiries you have.
+      </h4>
 
-      <h5 style={{ fontSize: "30px" , fontWeight: "normal"}}>
-      <a href="mailto:hello@lunarhacks.com" style={{ color: "inherit" }}>
-    hello@lunarhacks.com
-  </a>
+      <h5 style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)", fontWeight: "normal" }}>
+        <a href="mailto:hello@lunarhacks.com" style={{ color: "inherit" }}>
+          hello@lunarhacks.com
+        </a>
       </h5>
 
-      <footer className="footer">
-  © made with ♡ by the LunarHacks team
-</footer>
+
+     <footer className="footer">
+      © made with ♡ by the LunarHacks team
+    </footer>
 
 
       </section>

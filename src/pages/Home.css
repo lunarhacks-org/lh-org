@@ -19,24 +19,55 @@
 }
 
 .section {
-  background-color: #412775; /* Dark purple background for each section */
-  height: 60vh;
+  background-color: #412775;
+
+}
+
+
+.main-section{
+
+}
+
+.aboutUs-section {
+
+
+}
+
+.pastEvents-section{
+  height: auto;  /* Ensure content determines height */
+  margin-bottom: 10vh;
+  background-color: #003f5c;
+  padding-bottom: 10vh;
+}
+
+.ourTeam-section {
+  height: auto;
+  padding-bottom: 5vh;
+}
+
+
+.contactUs-section{
+  height: auto;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
+
 
 h1 {
   font-family: 'Titles';
   color: #EAAC49;
   padding-left: 9vw;
-  font-size: 4vw;
+  font-size: clamp(1.8rem, 4vw, 4rem);
 }
 
 h2 {
   color: #F7D683;
   font-family: 'subtitles';
   font-weight: 400;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 h3 {
@@ -44,15 +75,15 @@ h3 {
   color: #EAAC49;
   text-align: center;
   font-weight: 500;
-  font-size: xx-large;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 
 h4 {
   font-family: 'subtitles';
   color: #F7D683;
-  font-size: large;
   text-align: center;
   font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 
@@ -61,6 +92,7 @@ h5 {
   color: #EAAC49;
   font-size: 4vw;
   text-align: center;
+  font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .lh-logo {
@@ -137,11 +169,14 @@ h5 {
 }
 
 .person {
-  max-width: 8vw;
+  width: min(15vw, 140px);  /* Scales down but not smaller than 80px */
+  height: min(15vw, 140px); /* Keep height same as width */
   padding-left: 1vw;
   padding-right: 2vw;
-  border-radius: 100px;
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover; /* Ensures the image fills the circle properly */
 }
+
 
 .person:hover{
   transform: scale(1.1);
@@ -150,17 +185,16 @@ h5 {
 }
 
 .profile {
-  display:"column";
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  text-align: center;  /* Ensures text aligns under the image */
+
 }
 
 .footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
   width: 100%;
   text-align: center;
-  font-size: 14px;
-  padding-top: 40vh;
   color: #EAAC49;
+  margin-top: auto;
 }
