@@ -81,11 +81,10 @@ const Events = () => {
         <div>
           <p className="solheader">WHAT IS IT?</p>
           <p className="soltext" >
-            CHANGE THIS TEXT AS PER FIGMA COMMENT - LunarHacks is a local highschool-led non-profit organization that aims to empower women+ in 
-            STEM. We will be running a children’s symposium, Spark of Luminosity, this spring in 
-            collaboration with a local robotics team, Spark Youth Robotics Club, to introduce elementary 
-            school students to coding, robotics, and some basic STEM concepts!
+            This spring LunarHacks and Spark Youth Robotics Club are presenting Spark of Luminosity! A children's symposium packed with a full day of workshops, crafts, experiments, and swag.
+            Come join us to learn about coding, robotics, and tons of epic STEAM concepts!
           </p>
+          
         </div>
         <img
         src={Sparkle}
@@ -99,9 +98,17 @@ const Events = () => {
       >
         <p className="solheader">WHO CAN PARTICIPATE?</p>
         <p className="soltext" >
-          Any children ages 8 to 14!
-          Older than 16? Apply to become a speaker and lead a workshop
-        </p>
+          Any children in grade 3 to 8!</p>
+          <p className="soltext" >Grade 9 or older? Apply to become a volunteer!</p>
+          <p className="soltext" >Older than 16? Apply to become a speaker!</p>
+          <a 
+              href="https://forms.gle/tFciNSJS3PhvvMHy8" className="reg-button"
+              style={{ fontSize:"28px", fontWeight:"bold", paddingLeft:"3%", paddingRight:"3%" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              APPLY TO VOLUNTEER OR BECOME A SPEAKER!
+            </a>
       </div>
       <div
         style={{ marginTop:"60px" }}

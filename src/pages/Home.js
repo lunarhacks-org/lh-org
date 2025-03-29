@@ -34,7 +34,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className = "main-container">
       <Navbar sectionRefs={sectionRefs} />
       <section id="lunarhacks" ref={sectionRefs.lunarhacks} className="section main-section">
         <img 

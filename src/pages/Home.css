@@ -12,6 +12,11 @@
   font-style: thin;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
 
 .section:first-of-type {
   padding-top: 11vh; /* Match the navbar height */
@@ -21,36 +26,35 @@
   background-color: #412775;
 }
 
-
 .main-section{
-  height: 4vh;
+  height: 58vh;
+  max-height: 58vh;
 }
 
 .aboutUs-section {
-  height: 30vh; /* Prevent overflow */
+  height: 30vh;  
   max-height: 30vh;
   padding-bottom: 0;
   margin-bottom: 0;
   overflow: hidden; /* Stop child elements from pushing height */
-  border: 2px solid red; /* Debug: Check actual box size */
 }
 
 .pastEvents-section{
-  height: auto;  /* Ensure content determines height */
+  height: 100vh;  
+  min-height: 110vh;
   margin-bottom: 10vh;
   background-color: #003f5c;
-  padding-bottom: 10vh;
-  border: 2px solid red;
+
 }
 
 .ourTeam-section {
-  height: auto;
-  padding-bottom: 5vh;
+  height: 70vh;
+  max-height: 70vh;
 }
 
-
 .contactUs-section{
-  height: auto;
+  height: 70vh;
+  max-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,8 +114,8 @@ h5 {
 }
 
 .ab-txt {
-  padding-top: 2vh;
-  max-height: 100% !important; /* Ensure image does not exceed section */
+  padding-top: 5vh;
+  max-height: 100%; /* Ensure image does not exceed section */
   max-width: 20vw; /* Slightly smaller width */
   height: auto; /* Maintain aspect ratio */
   padding-left: 5vw; /* Reduce left padding */
@@ -167,7 +171,9 @@ h5 {
 .team {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
 }
 
 .person {
@@ -191,6 +197,7 @@ h5 {
   flex-direction: column;
   align-items: center; /* Centers items horizontally */
   text-align: center;  /* Ensures text aligns under the image */
+  padding-bottom: 3vh;
 
 }
 

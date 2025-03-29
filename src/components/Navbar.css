@@ -1,17 +1,4 @@
-@font-face {
-  font-family: 'Titles';
-  src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'subtitles';
-  src: url('../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
-  font-weight: 300;
-  font-style: thin;
-}
-
+/* General Navbar Styling */
 .nav {
   position: fixed;
   top: 0;
@@ -21,32 +8,24 @@
   align-items: center;
   z-index: 1000;
   height: 9vh;
+  background-color: #412775;
+  padding: 0 20px;
 }
 
-.nav-right .button {
-  font-family: 'subtitles';
-  margin: 0 10px;
-  padding: 10px 15px;
-  color: #F7F2E0;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* Button Hover Styling */
-.button:hover {
-  transform: scale(1.1);
+/* Logo */
+.nav-left {
+  display: flex;
+  align-items: center;
 }
 
 .logo-button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .section-logo {
-  width: 1vw;
+  width: 50px;
   height: auto;
 }
 
@@ -54,7 +33,74 @@
   transform: scale(1.1);
 }
 
-.nav-events {
-  background-color: #cdafaf; /* Example: dark background */
-  color: #fff; /* White text for better contrast */
+/* Navigation Links */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Buttons */
+.button,
+.spec-button {
+  font-family: "subtitles";
+  margin: 0 10px;
+  padding: 10px 15px;
+  color: #f7f2e0;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Button Hover */
+.button:hover,
+.spec-button:hover {
+  transform: scale(1.1);
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none; /* Default hidden */
+  cursor: pointer;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #f7f2e0;
+  z-index: 1001;
+}
+
+/* ✅ FIX: Use a larger breakpoint (768px instead of 500px) */
+@media (max-width: 768px) {
+  /* Hide regular menu and show hamburger */
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    right: 0;
+    background-color: #4e3386;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* Show menu when toggled */
+  .nav-right.menu-open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 40px;
+    padding: 5vw;
+  }
+
+  .button,
+  .spec-button {
+    display: block;
+    padding: 15px;
+    width: 100%;
+  }
 }
