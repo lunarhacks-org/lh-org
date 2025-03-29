@@ -21,6 +21,7 @@
 .section {
   background-color: #412775; /* Dark purple background for each section */
   height: 60vh;
+  justify-content: space-between;
 }
 
 h1 {
@@ -34,20 +35,22 @@ h2 {
   color: #F7D683;
   font-family: 'subtitles';
   font-weight: 400;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 h3 {
   font-family: 'Titles';
   color: #EAAC49;
-  font-size: 2vw;
   text-align: center;
   font-weight: 500;
+  font-size: xx-large;
 }
 
 h4 {
   font-family: 'subtitles';
   color: #F7D683;
-  font-size: 1.5vw;
+  font-size: large;
   text-align: center;
   font-weight: 400;
 }
@@ -56,7 +59,6 @@ h4 {
 h5 {
   font-family: 'Titles';
   color: #EAAC49;
-  padding-left: 9vw;
   font-size: 4vw;
   text-align: center;
 }
@@ -150,4 +152,15 @@ h5 {
 .profile {
   display:"column";
   align-items: center;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 40vh;
+  color: #EAAC49;
 }

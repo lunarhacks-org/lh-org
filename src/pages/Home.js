@@ -47,7 +47,12 @@ const Home = () => {
           alt="About Us"
           className="ab-txt"
         />
-        <h2>we are v cool people</h2>
+        <h2>LunarHacks strives to engage youth in the fields of
+STEM. We wish to create an encouraging environment
+for our participants of all ages to build the next
+generation of STEM leaders while breaking barriers that
+exist in today's society. The galaxy’s the limit.
+</h2>
       </section>
       <section id="pastEvents" ref={sectionRefs.pastEvents} className="section">
         <h1>Past Events</h1>
@@ -93,14 +98,7 @@ const Home = () => {
         <h1>Our Team</h1>
 
         <div className="team">
-            <div className="profile">
-            <img
-            src={grace}
-            className="person"
-            />
-            <h3>grace</h3>
-          </div>
-          
+            
           <div className="profile">
             <img
             src={aroob}
@@ -133,8 +131,6 @@ const Home = () => {
             <h3>sophie</h3>
             </div>
 
-        </div>
-        <div className="team">
             <div className="profile">
             <img
             src={grace}
@@ -142,6 +138,10 @@ const Home = () => {
             />
             <h3>linda</h3>
           </div>
+
+        </div>
+        <div className="team">
+            
           
           <div className="profile">
             <img
@@ -185,8 +185,19 @@ const Home = () => {
 
       <h5>Contact Us!</h5>
 
-      <h4 style={{ fontSize: "20px" , alignItems:"center"}}>
+      <h4 style={{ fontSize: "20px" }}>
         We'd love to answer any inquires you have. </h4>
+
+      <h5 style={{ fontSize: "30px" , fontWeight: "normal"}}>
+      <a href="mailto:hello@lunarhacks.com" style={{ color: "inherit" }}>
+    hello@lunarhacks.com
+  </a>
+      </h5>
+
+      <footer className="footer">
+  © made with ♡ by the LunarHacks team
+</footer>
+
 
       </section>
     </div>

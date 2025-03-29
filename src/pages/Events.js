@@ -22,7 +22,7 @@ const Events = () => {
     const handleHashChange = () => {
       const hash = window.location.hash.slice(1); // Get the section from URL hash
       if (hash && sectionRefs[hash]?.current) {
-        sectionRefs[hash].current.scrollIntoView({ behavior: "smooth" });
+        sectionRefs[hash].current.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     };
 
@@ -99,7 +99,7 @@ const Events = () => {
       >
         <p className="solheader">WHO CAN PARTICIPATE?</p>
         <p className="soltext" >
-          Any children ages 7 to 13!
+          Any children ages 8 to 14!
           Older than 16? Apply to become a speaker and lead a workshop
         </p>
       </div>
