@@ -15,6 +15,9 @@ import vivian from "../img/vivan.jpeg";
 import sophie from "../img/sophie.jpeg";
 import anerie from "../img/anerie.jpg";
 import eileen from "../img/eileen.jpg";
+import emily from "../img/emily.jpg";
+import ariel from "../img/ariel.jpg";
+import linda from "../img/linda.jpg";
 
 const Home = () => {
   const sectionRefs = {
@@ -135,7 +138,7 @@ exist in today's society. The galaxy’s the limit.
 
             <div className="profile">
             <img
-            src={grace}
+            src={linda}
             className="person"
             />
             <h3>linda</h3>
@@ -155,7 +158,7 @@ exist in today's society. The galaxy’s the limit.
 
             <div className="profile">
             <img
-            src={tishya}
+            src={ariel}
             className="person"
             />
             <h3>ariel</h3>
@@ -171,7 +174,7 @@ exist in today's society. The galaxy’s the limit.
 
             <div className="profile">
             <img
-            src={sophie}
+            src={emily}
             className="person"
             />
             <h3>emily</h3>
