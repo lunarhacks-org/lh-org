@@ -121,3 +121,20 @@ html {
   max-width: 10vw;
   padding-left: 5vw;
 }
+
+.sponsor-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw; /* Add some space between logos */
+  justify-content: center;
+}
+
+.sponsorLogo img {
+  max-width: 20vw; /* Adjust to fit multiple logos side by side */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sponsorLogo img:hover {
+  transform: scale(1.2);
+}

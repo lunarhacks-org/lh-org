@@ -4,7 +4,10 @@ import "./Events.css";
 import SoLLogo from "../img/sollogo.svg";
 import SoLText from "../img/soltext.svg";
 import Sparkle from "../img/sparkle.svg";
-
+import Ross from "../img/Ross.png";
+import VV from "../img/VV.png";
+import Nokia from "../img/NOKIA.png";
+import DPI from "../img/DPI.png";
 
 // should auto go to the start of the page
 
@@ -101,6 +104,10 @@ const Events = () => {
           Any children in grade 3 to 8!</p>
           <p className="soltext" >Grade 9 or older? Apply to become a volunteer!</p>
           <p className="soltext" >Older than 16? Apply to become a speaker!</p>
+          <div
+        style={{ marginTop:"5vh" }}
+      ></div>
+
           <a 
               href="https://forms.gle/tFciNSJS3PhvvMHy8" className="reg-button"
               style={{ fontSize:"28px", fontWeight:"bold", paddingLeft:"3%", paddingRight:"3%" }}
@@ -113,6 +120,50 @@ const Events = () => {
       <div
         style={{ marginTop:"60px" }}
       >
+        <p className="solheader">OUR SPONSORS</p>
+        <p className="soltext" > A huge thank you to our sponsors to make this event possible!</p>
+        
+        <div className="sponsor-logos-container">
+        <a 
+        href="https://carleton.ca/vv/" className="sponsorLogo"
+        style={{ width: "50%" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={VV} alt="virtual ventures" />
+      </a>
+
+      <a 
+        href="https://www.rossvideo.com/" className="sponsorLogo"
+        style={{ width: "50%" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={Ross} alt="Ross Video Ltd." />
+      </a>
+
+      <a 
+        href="https://www.nokia.com/careers/our-locations/canada/" className="sponsorLogo"
+        style={{ width: "50%" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={Nokia} alt="Nokia" />
+      </a>
+
+      <a 
+        href="https://dpi-canada.com/" className="sponsorLogo"
+        style={{ width: "50%" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={DPI} alt="DPI" />
+      </a>
+
+      </div>
+
+
+
         <p className="solheader">I HAVE MORE QUESTIONS!</p>
         <p className="soltext">
   Email us at 
