@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# LunarHacks Website
 
 figma file: https://www.figma.com/design/zDyPXRnlKKFr94WAo7LhYT/website?node-id=0-1&t=rGJFZzWqPWQ4yBZG-1
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Made with React
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
