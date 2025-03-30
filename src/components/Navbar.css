@@ -83,7 +83,7 @@
     visibility: visible; /* Make the menu visible */
     opacity: 1; /* Make the menu visible */
     height: auto; /* Allow the menu to take its natural height */
-    transition: opacity 0.4s ease, visibility 0s 0s, height 0.3s ease; /* Smooth transition */
+    transition: opacity 0.3s ease, visibility 0s 0s, height 0.3s ease; /* Smooth transition */
   }
 
   /* Menu items arranged in a column */
