@@ -18,6 +18,14 @@
   align-items: center;
 }
 
+/* Navigation Links */
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+
 .logo-button {
   background: none;
   border: none;
@@ -33,24 +41,16 @@
   transform: scale(1.1);
 }
 
-/* Navigation Links */
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-
 /* Buttons */
 .button,
 .spec-button {
   font-family: "subtitles";
-  margin: 0 10px;
-  padding: 10px 15px;
-  color: #f7f2e0;
+  font-size: 20px;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 18px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -71,36 +71,37 @@
   z-index: 1001;
 }
 
-/* ✅ FIX: Use a larger breakpoint (768px instead of 500px) */
 @media (max-width: 768px) {
-  /* Hide regular menu and show hamburger */
   .nav-right {
-    display: none;
+    visibility: hidden; /* Hide the menu by default */
+    opacity: 0; /* Make it invisible */
+    height: 0; /* Hide the menu */
+    overflow: hidden; /* Prevent it from taking up space */
+  }
+
+  .nav-right.menu-open {
+    visibility: visible; /* Make the menu visible */
+    opacity: 1; /* Make the menu visible */
+    height: auto; /* Allow the menu to take its natural height */
+    transition: opacity 0.4s ease, visibility 0s 0s, height 0.3s ease; /* Smooth transition */
+  }
+
+  /* Menu items arranged in a column */
+  .nav-right {
     flex-direction: column;
-    position: absolute;
-    top: 9vh;
-    right: 0;
     background-color: #4e3386;
     width: 100%;
     padding: 10px 0;
     text-align: center;
-  }
-
-  /* Show menu when toggled */
-  .nav-right.menu-open {
-    display: flex;
+    position: absolute;
+    top: 9vh; /* Position the menu below the navbar */
+    left: 0;
+    z-index: 999; /* Ensure it appears above other content */
   }
 
   .hamburger {
     display: block;
     font-size: 40px;
-    padding: 5vw;
-  }
-
-  .button,
-  .spec-button {
-    display: block;
-    padding: 15px;
-    width: 100%;
+    padding: 8vw;
   }
 }

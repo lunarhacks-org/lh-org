@@ -188,15 +188,34 @@ exist in today's society. The galaxy’s the limit.
 
       <h5>Contact Us!</h5>
 
+      <h2 style={{
+    textAlign: 'center', // Centers the text horizontally
+    fontSize: "clamp(1rem, 2vw, 1.5rem)", 
+    color: "#EAAC49"   // Sets the font size to 14px (adjust as needed)
+  }}>
+  Follow our{' '}
+  <a
+    href="https://www.instagram.com/lunarhacks/"
+    target="_blank"
+    style={{ color: '#EAAC49'}}
+  >
+    Instagram
+  </a>{' '}
+  for updates!
+
+</h2>
+
             <h4 style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }}>
-        We'd love to answer any inquiries you have.
-      </h4>
+             We'd love to answer any inquiries you have.
+          </h4>
 
       <h5 style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)", fontWeight: "normal" }}>
         <a href="mailto:hello@lunarhacks.com" style={{ color: "inherit" }}>
           hello@lunarhacks.com
         </a>
       </h5>
+
+      
 
 
      <footer className="footer">

@@ -9,6 +9,7 @@ const Navbar = ({ sectionRefs }) => {
 
   // Function to scroll to section
   const scrollToSection = (section) => {
+    console.log('Closing menu...');
     setMenuOpen(false); // Close menu when an item is clicked
     if (location.pathname === "/events") {
       window.location.replace(`/#${section}`);
@@ -18,6 +19,12 @@ const Navbar = ({ sectionRefs }) => {
       }
       window.location.hash = section;
     }
+  };
+
+  const toggleMenu = () => {
+    console.log('Current menuOpen:', menuOpen);
+    setMenuOpen(prevState => !prevState);
+    console.log('Updated menuOpen:', !menuOpen);
   };
 
   // Dynamic class for the navbar
@@ -32,7 +39,7 @@ const Navbar = ({ sectionRefs }) => {
       </div>
 
       {/* Hamburger Button */}
-      <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      <button className="hamburger" onClick={toggleMenu}>
         ☰
       </button>
 
@@ -58,5 +65,4 @@ const Navbar = ({ sectionRefs }) => {
   );
 };
 
-// ✅ Make sure Navbar is exported correctly
 export default Navbar;
