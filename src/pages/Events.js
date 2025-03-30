@@ -103,9 +103,9 @@ const Events = () => {
       >
         <p className="solheader">WHO CAN PARTICIPATE?</p>
         <p className="soltext" >
-          Any children in grade 3 to 8!</p>
+          Any children in grade 1 to 8!</p>
           <p className="soltext" >Grade 9 or older? Apply to become a volunteer!</p>
-          <p className="soltext" >Older than 16? Apply to become a speaker!</p>
+          <p className="soltext" >16 and older? Apply to become a speaker!</p>
           <div
         style={{ marginTop:"5vh" }}
       ></div>
