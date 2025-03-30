@@ -8,6 +8,8 @@ import Ross from "../img/Ross.png";
 import VV from "../img/VV.png";
 import Nokia from "../img/NOKIA.png";
 import DPI from "../img/DPI.png";
+import LH from "../img/logo.png";
+import syrc from "../img/syrc.png";
 
 // should auto go to the start of the page
 
@@ -123,44 +125,46 @@ const Events = () => {
         <p className="solheader">OUR SPONSORS</p>
         <p className="soltext" > A huge thank you to our sponsors to make this event possible!</p>
         
-        <div className="sponsor-logos-container">
+              <div className="sponsor-logos-container">
+        
+              <a 
+          href="https://www.rossvideo.com/" 
+          className="sponsorLogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Ross} alt="Ross Video Ltd." />
+        </a>
+
+
+  
         <a 
-        href="https://carleton.ca/vv/" className="sponsorLogo"
-        style={{ width: "50%" }}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={VV} alt="virtual ventures" />
-      </a>
+          href="https://www.nokia.com/careers/our-locations/canada/" 
+          className="sponsorLogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Nokia} alt="Nokia" />
+        </a>
+        <a 
+          href="https://carleton.ca/vv/" 
+          className="vvLogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={VV} alt="Virtual Ventures" />
+        </a>
 
-      <a 
-        href="https://www.rossvideo.com/" className="sponsorLogo"
-        style={{ width: "50%" }}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={Ross} alt="Ross Video Ltd." />
-      </a>
-
-      <a 
-        href="https://www.nokia.com/careers/our-locations/canada/" className="sponsorLogo"
-        style={{ width: "50%" }}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={Nokia} alt="Nokia" />
-      </a>
-
-      <a 
-        href="https://dpi-canada.com/" className="sponsorLogo"
-        style={{ width: "50%" }}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={DPI} alt="DPI" />
-      </a>
-
+        <a 
+          href="https://dpi-canada.com/" 
+          className="sponsorLogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={DPI} alt="DPI" />
+        </a>
       </div>
+
 
 
 
@@ -172,6 +176,30 @@ const Events = () => {
   <a href="mailto:spark.youthrc@gmail.com" style={{ color:"#BA1757", fontWeight:"bold" }}> spark.youthrc@gmail.com</a>; 
   we'd be happy to chat!
 </p>
+
+
+<div className="orgLogos-container">
+  <a 
+    href="https://www.instagram.com/lunarhacks/" 
+    className="orgLogos"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={LH} alt="Lunar Hacks" />
+  </a>
+
+  <span className="separator">×</span>
+
+  <a 
+    href="https://syrc.ca/" 
+    className="orgLogos"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={syrc} alt="Spark Youth Robotics Club" />
+  </a>
+</div>
+
 
 
       </div>
