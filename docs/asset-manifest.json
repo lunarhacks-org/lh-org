@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5bc0c5a6.css",
+    "main.js": "/static/js/main.63a4718e.js",
+    "static/media/tishya.jpg": "/static/media/tishya.546a91012edf60691780.jpg",
+    "static/media/vivan.jpeg": "/static/media/vivan.a6275e496b0052c66177.jpeg",
+    "static/media/grace.jpg": "/static/media/grace.f88341b5fc5bfba9569a.jpg",
+    "static/media/emily.jpg": "/static/media/emily.596f5845729def666efb.jpg",
+    "static/media/Inter-VariableFont_opsz,wght.ttf": "/static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
+    "static/media/sophie.jpeg": "/static/media/sophie.910fc78627ec9cdfacd6.jpeg",
+    "static/media/aroob.png": "/static/media/aroob.2a7f9155bbe1e0f5dde9.png",
+    "static/media/anerie.jpg": "/static/media/anerie.1953f5857332c658ebb7.jpg",
+    "static/media/ariel.jpg": "/static/media/ariel.eee052a0da733b55cb4d.jpg",
+    "static/media/lh3.jpg": "/static/media/lh3.55be5871f4348d407c2a.jpg",
+    "static/media/eileen.jpg": "/static/media/eileen.ef2dafc66fe99242fbd0.jpg",
+    "static/media/logo.png": "/static/media/logo.236fd1ae6fe861b39406.png",
+    "static/media/soltext.svg": "/static/media/soltext.0e87330e55e9a2ea16b0d162263fb376.svg",
+    "static/media/sparkle.svg": "/static/media/sparkle.fdcba9b13386fc5eeffc5d7661c4f6c7.svg",
+    "static/media/sollogo.svg": "/static/media/sollogo.6d0f7bcb7c941571fa03e55d08e5cb8d.svg",
+    "static/media/lhOrg.jpg": "/static/media/lhOrg.a4d2da17024a40b0c278.jpg",
+    "static/media/linda.jpg": "/static/media/linda.a97fb78366996673cd73.jpg",
+    "static/media/industry.png": "/static/media/industry.10f5415e0c6af9b76e4b.png",
+    "static/media/DPI.png": "/static/media/DPI.7c48548e8e7b94fdaabe.png",
+    "static/media/VV.png": "/static/media/VV.c9f6026bb24789d30d43.png",
+    "static/media/NOKIA.png": "/static/media/NOKIA.64eaeb2be5792b305c2d.png",
+    "static/media/syrc.png": "/static/media/syrc.b225946120c5ee213715.png",
+    "static/media/Ross.png": "/static/media/Ross.784fe57ad91b742c8f55.png",
+    "static/media/participants.png": "/static/media/participants.6195fedf6deba75bb1bd.png",
+    "static/media/lh.png": "/static/media/lh.f776bbac296eb79ce988.png",
+    "static/media/threeHackathons.png": "/static/media/threeHackathons.7ef6220511763e369c01.png",
+    "static/media/aboutUs.png": "/static/media/aboutUs.45654245dee4c8f68bed.png",
+    "index.html": "/index.html",
+    "main.5bc0c5a6.css.map": "/static/css/main.5bc0c5a6.css.map",
+    "main.63a4718e.js.map": "/static/js/main.63a4718e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bc0c5a6.css",
+    "static/js/main.63a4718e.js"
+  ]
+}
